@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/Button_Date"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/my_button_bg"
+        android:drawableRight="@drawable/calendar_icon"
+        android:scaleType="fitEnd"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/TextView_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Time"
+        android:textSize="15sp"
+        android:textStyle=""
+        app:layout_constraintEnd_toEndOf="@+id/Button_Date"
+        app:layout_constraintStart_toStartOf="@+id/Button_Date"
+        app:layout_constraintTop_toBottomOf="@+id/Button_Date" />
+
+    <Button
+        android:id="@+id/Button_Time"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/my_button_bg"
+        android:scaleType="fitEnd"
+        app:layout_constraintEnd_toEndOf="@+id/TextView_Time"
+        app:layout_constraintStart_toStartOf="@+id/TextView_Time"
+        app:layout_constraintTop_toBottomOf="@+id/TextView_Time" />
+
+    <TextView
+        android:id="@+id/TextView_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="81dp"
+        android:text="Number of Slots"
+        app:layout_constraintEnd_toEndOf="@+id/Button_Time"
+        app:layout_constraintStart_toStartOf="@+id/Button_Time"
+        app:layout_constraintTop_toBottomOf="@+id/Button_Time" />
+
+    <Spinner
+        android:id="@+id/Spinner_AmountOfSlots"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/my_button_bg"
+        app:layout_constraintEnd_toEndOf="@+id/TextView_Amount"
+        app:layout_constraintStart_toStartOf="@+id/TextView_Amount"
+        app:layout_constraintTop_toBottomOf="@+id/TextView_Amount" />
+
+    <Button
+        android:id="@+id/BUTTON_CONFIRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="232dp"
+        android:text="CONFIRM"
+        app:layout_constraintEnd_toEndOf="@+id/Button_Time"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/Button_Time"
+        app:layout_constraintTop_toBottomOf="@+id/Button_Time" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
